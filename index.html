@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.marco-negro{
+  background-color:#000;
+  display: grid;
+  height: 748px;
+  width: 748px;
+  grid-template-columns: 320px 198px 153px 50px;
+  grid-template-rows: 414px 130px 155px 22px;
+  gap: 9px;
+}
+
+.item{
+  background-color: #F0F1EC ;
+}
+
+.rojo{
+  background-color: #E72F24 ;
+}
+
+.blanco1{
+ grid-column: span 3;
+}
+
+.blanco2{
+  grid-row: span 2;
+}
+
+.blanco3{
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+.azul{
+  background-color: #004592 ;
+  border-bottom: 10px solid #000;
+}
+
+.blanco4{
+  grid-row: span 2;
+}
+
+.amarillo{
+  background-color: #F9D01E ;
+}
+
+.negro{
+  background-color: #232629;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class="marco-negro" >
+  <div class="rojo item" ></div>
+  <div class="blanco1 item" ></div>
+  <div class="blanco2 item" ></div>
+  <div class="blanco3 item"  ></div>
+  <div class="azul item" ></div>
+  <div class="blanco4 item" ></div>
+  <div class="item" ></div>
+  <div class="amarillo item" ></div>
+  <div class="negro item" ></div>
+</div>
+
+</body>
+
+</html>
